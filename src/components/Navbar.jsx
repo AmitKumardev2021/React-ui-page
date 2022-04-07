@@ -28,7 +28,7 @@ const Navbar = () => {
             <button className="ml-4">Use Defi</button>
           </ul>
         </div>
-        <div onClick={handlebtn}  className="block md:hidden">
+        <div onClick={handlebtn}  className="z-10 md:hidden">
 
         {
           !nav?(
@@ -40,7 +40,7 @@ const Navbar = () => {
         }
         </div>
         {/* mobile menu */}
-        <div className={!nav?(" absolute hidden"):("w-full bg-black text-white absolute top-[90px] left-0 flex justify-center text-center md:hidden")}>
+        <div className={!nav?(" absolute hidden"):("w-full h-screen bg-black text-white absolute top-0 left-0 flex justify-center text-center md:hidden")}>
           <ul>
             <li className="text-xl">Platform</li>
             <li className="text-xl">Developers</li>
